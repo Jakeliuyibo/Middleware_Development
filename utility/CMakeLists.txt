@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.12)
+# 添加子目录
+add_subdirectory(testmodule)
+add_subdirectory(logger)
+add_subdirectory(systime)
+add_subdirectory(timer)
+add_subdirectory(singleton)
+add_subdirectory(jsonparser)
+add_subdirectory(httpserver)
+add_subdirectory(threadpool)
+add_subdirectory(vector)
+add_subdirectory(smartptr)
