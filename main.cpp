@@ -14,6 +14,7 @@
 using namespace utility;
 using namespace std;
 
+
 int main(void)
 {
     auto p = new vector<int>(10, 123);
