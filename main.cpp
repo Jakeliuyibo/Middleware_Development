@@ -14,12 +14,6 @@
 using namespace utility;
 using namespace std;
 
-void fucnt(int a)
-{
-    int b;
-    cout << a << " " << b << endl;
-}
-
 int main(void)
 {
     auto p = new vector<int>(10, 123);
