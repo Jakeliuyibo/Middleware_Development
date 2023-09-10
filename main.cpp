@@ -34,11 +34,7 @@ int main(void)
     SharedPtr<vector<int>> sp1(sp);
     cout << sp.use_count() << endl;
     cout << sp1.use_count() << endl;
-    // SharedPtr<vector<int>> sp2(std::move(sp));
-    // // // cout << *sp.get() << endl;
-    // // cout << *sp1.get() << endl;
-    // cout << bool(sp) << endl;
-    // cout << bool(sp1) << endl;
+
     debug("hello world1");
 
     return 0;
