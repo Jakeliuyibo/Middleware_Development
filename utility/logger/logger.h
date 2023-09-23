@@ -22,7 +22,7 @@ namespace utility
 #define info(format, ...) \
     Logger::instance()->log(Logger::INFO, __FILE__, __LINE__, format, ##__VA_ARGS__)
 
-#define waring(format, ...) \
+#define warning(format, ...) \
     Logger::instance()->log(Logger::WARNING, __FILE__, __LINE__, format, ##__VA_ARGS__)
 
 #define error(format, ...) \

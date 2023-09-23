@@ -45,6 +45,9 @@
         "sstream": "cpp",
         "streambuf": "cpp",
         "thread": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "amqp_socket.h": "c",
+        "amqp_table.h": "c",
+        "amqp_private.h": "c"
     }
 }
