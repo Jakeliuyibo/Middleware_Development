@@ -20,22 +20,11 @@ set(HEADPATH
 	${PROJECT_SOURCE_DIR}//utility//timer
 	${PROJECT_SOURCE_DIR}//utility//jsonparser
 	${PROJECT_SOURCE_DIR}//utility//smartptr
-	${PROJECT_SOURCE_DIR}//utility//rabbitmqcomm
+	${PROJECT_SOURCE_DIR}//utility//rbtree
+	${PROJECT_SOURCE_DIR}//utility//rabbitmqclient
 	Y:/Codeplace_3rd-Party_Middleware/rabbitmq-install/include
 	)
 
-# 可执行文件名称
-set(APPNAME app)
-
 # 添加子目录
 add_subdirectory(utility)
-
-# 生成APP
-# 引用头文件
-include_directories(${HEADPATH})
-# 链接静态库和动态库
-link_directories(${LIBPATH})
-link_libraries(testmodule systime singleton httpserver threadpool vector logger timer jsonparser smartptr rabbitmqcomm)
-# 生成可执行文件
-set(EXECUTABLE_OUTPUT_PATH ${EXECPATH})
-add_executable(${APPNAME} main.cpp)
+add_subdirectory(test)
