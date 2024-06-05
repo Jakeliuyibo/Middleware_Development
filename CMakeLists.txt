@@ -23,6 +23,8 @@ set(HEADPATH
 	${PROJECT_SOURCE_DIR}//utility//rbtree
 	${PROJECT_SOURCE_DIR}//utility//rabbitmqclient
 	Y:/Codeplace_3rd-Party_Middleware/rabbitmq-install/include
+	${PROJECT_SOURCE_DIR}//utility//singleton_safe
+	${PROJECT_SOURCE_DIR}//utility//visitor
 	)
 
 # 添加子目录

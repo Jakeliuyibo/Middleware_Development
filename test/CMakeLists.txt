@@ -12,5 +12,5 @@ set(EXECUTABLE_OUTPUT_PATH ${EXECPATH})
 add_executable(test_rabbitmqclient test_rabbitmqclient.cpp)
 add_executable(test_rbtree test_rbtree.cpp)
 add_executable(test_singleton_safe test_singleton_safe.cpp)
-add_executable(test_visitor test_visitor_safe.cpp)
+add_executable(test_visitor test_visitor.cpp)
 
