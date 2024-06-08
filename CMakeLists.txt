@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.12)
 project(Middleware_development)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 23)
 
 # 定义变量
 # 静态库生成的路径
@@ -25,6 +25,7 @@ set(HEADPATH
 	Y:/Codeplace_3rd-Party_Middleware/rabbitmq-install/include
 	${PROJECT_SOURCE_DIR}//utility//singleton_safe
 	${PROJECT_SOURCE_DIR}//utility//visitor
+	${PROJECT_SOURCE_DIR}//utility//slotmap
 	)
 
 # 添加子目录
