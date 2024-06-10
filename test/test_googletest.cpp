@@ -86,7 +86,7 @@ TEST_F(TestContainer, ModifyValue)
     c2.modifyA(100);
     c2.modifyB(200);
     EXPECT_EQ(100, c2.getA());
-    EXPECT_EQ(300, c2.getB());
+    EXPECT_EQ(300, c2.getB()) << "main";
 }
 
 int main()
