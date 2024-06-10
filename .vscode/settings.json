@@ -50,6 +50,11 @@
         "amqp_table.h": "c",
         "amqp_private.h": "c",
         "cassert": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "any": "cpp",
+        "condition_variable": "cpp",
+        "set": "cpp",
+        "mutex": "cpp",
+        "variant": "cpp"
     }
 }

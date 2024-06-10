@@ -93,7 +93,7 @@ void test_erase_for_map(size_t size, string type="vec_and_list")
     }
     auto start = std::chrono::high_resolution_clock::now();
     for (size_t i = 0; i < size; ++i) {
-        auto k = c.Insert(i);
+        auto k = c.erase(i);
     }
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> elapsed = end - start;
