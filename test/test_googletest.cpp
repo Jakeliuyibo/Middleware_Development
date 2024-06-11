@@ -66,7 +66,7 @@ protected:
     }
 
     mContainer c1;
-    mContainer c2{3, 4};
+    mContainer c2{ 3, 4 };
 };
 
 TEST_F(TestContainer, DefaultConstructor)
