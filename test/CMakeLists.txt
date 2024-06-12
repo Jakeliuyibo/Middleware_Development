@@ -10,7 +10,7 @@ link_libraries(testmodule systime singleton httpserver threadpool vector logger 
 
 # 链接 Geogle Test
 link_directories("Y:\\Codeplace_3rd-Party_Middleware\\googletest-main\\build\\lib")
-link_libraries(libgtest.a)
+link_libraries(libgtest.a libgtest_main.a)
 
 # 设置输出路径
 set(EXECUTABLE_OUTPUT_PATH ${EXECPATH})
@@ -22,3 +22,4 @@ add_executable(test_singleton_safe test_singleton_safe.cpp)
 add_executable(test_visitor test_visitor.cpp)
 add_executable(test_slotmap test_slotmap.cpp)
 add_executable(test_googletest test_googletest.cpp)
+add_executable(test_moderncpp test_moderncpp.cpp)

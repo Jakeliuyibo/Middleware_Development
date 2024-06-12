@@ -88,9 +88,3 @@ TEST_F(TestContainer, ModifyValue)
     EXPECT_EQ(100, c2.getA());
     EXPECT_EQ(300, c2.getB()) << "main";
 }
-
-int main()
-{
-    testing::InitGoogleTest();
-    return RUN_ALL_TESTS();
-}
