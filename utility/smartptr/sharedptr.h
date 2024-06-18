@@ -138,7 +138,7 @@ namespace utility
             (*m_count)++;
             return *this;
         }
-        SharedPtr &operator=(const SharedPtr<T> &&other)
+        SharedPtr &operator=(SharedPtr<T> &&other)
         {
             if (this == &other)
             {

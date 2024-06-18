@@ -1,16 +1,17 @@
 # 引用头文件
 include_directories(
     ${HEADPATH}
-    "Y:\\Codeplace_3rd-Party_Middleware\\googletest-main\\googletest\\include"
     )
 
 # 链接静态库和动态库
 link_directories(${LIBPATH})
 link_libraries(testmodule systime singleton httpserver threadpool vector logger timer jsonparser smartptr rabbitmqclient rbtree singleton_safe slotmap)
 
-# 链接 Geogle Test
-link_directories("Y:\\Codeplace_3rd-Party_Middleware\\googletest-main\\build\\lib")
-link_libraries(libgtest.a libgtest_main.a)
+# 使用MSYS2/VCPKG引用第三方库 
+# 1、Geogle Test
+include_directories("S:\\msys2\\mingw64\\include")
+link_directories("S:\\msys2\\mingw64\\lib")
+link_libraries(libgtest libgtest_main)
 
 # 设置输出路径
 set(EXECUTABLE_OUTPUT_PATH ${EXECPATH})
